@@ -1,15 +1,18 @@
 <script setup>
-  import { useDialog, dataDialog } from "@/composables/useDialog";
-  const dialog = useDialog();
+  import { useDialog, dataDialogs } from "@/composables/useDialog";
+  const { close, register } = useDialog();
+  const id = "dialog1"; // 設置對應的 dialog ID
 </script>
 
 <template lang="pug">
 div
   //- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
-  dialog#dialog
-    button.cancel(@click="dialog.close('cancel')") {{ dataDialog.cancel.btnName }}
+  dialog(ref="dialog", @mount="register(id, $refs.dialog)")
+    button.cancel(@click="close")
+      | {{ dataDialogs.dialogs[id]?.cancel?.btnName }}
     main.container
-      p {{ dataDialog.content }}
+      component(v-if="dataDialogs.dialogs[id]?.content", :is="dataDialogs.dialogs[id]?.content")
+
 </template>
 
 <style scoped lang="sass">

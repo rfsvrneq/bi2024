@@ -1,34 +1,38 @@
-const dialogRef = ref(null);
+const dialogs = reactive({});
+const currentDialogKey = ref(null);
 
-export const dataDialog = reactive({
-  content: "",
-  cancel: {
-    btnName: "",
-    onComplete: () => {
-    },
-  },
+export const dataDialogs = reactive({
+  dialogs: {},
 });
 
-
 export const useDialog = () => {
-
-  const open = (option) => {
-    if (option) {
-      dataDialog.content = option.content || "內容";
-      dataDialog.cancel = option.cancel;
-
-      dataDialog.cancel.btnName = option.cancel.btnName || "╳";
+  const open = (key, options) => {
+    if (!dialogs[key]) {
+      console.warn(`Dialog with key "${key}" does not exist.`);
+      return;
     }
-    dialogRef.value.showModal();
+    currentDialogKey.value = key;
+    dataDialogs.dialogs[key] = {
+      content: options.content || null,
+      cancel: {
+        btnName: options.cancel?.btnName || "╳",
+        onComplete: options.cancel?.onComplete || (() => {}),
+      },
+    };
+    dialogs[key].showModal();
   };
 
-  const close = (type) => {
-    dialogRef.value.close();
+  const close = () => {
+    const key = currentDialogKey.value;
+    if (key && dialogs[key]) {
+      dialogs[key].close();
+      currentDialogKey.value = null;
+    }
   };
 
-  onMounted(() => {
-    dialogRef.value = document.querySelector("#dialog"); // 取得 dialog 元素
-  });
+  const register = (key, dialogRef) => {
+    dialogs[key] = dialogRef;
+  };
 
-  return { open, close };
+  return { open, close, register, currentDialogKey };
 };

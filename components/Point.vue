@@ -1,15 +1,15 @@
 <script setup>
+import { useDialog } from "@/composables/useDialog";
+import dialog1 from "@/components/Dialog/dialog1.vue"; 
 
-const dialog = useDialog();
+const { open } = useDialog();
 
-const openDialog = () => {
-  dialog.open({
-    content: "就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你說是內文了就跟你",
+const openDialog1 = () => {
+  open("dialog1", {
+    content: dialog1,
     cancel: {
-      btnName: "╳",
-      onComplete: () => {
-        console.log("取消了喔");
-      },
+      btnName: "關閉",
+      onComplete: () => console.log("Dialog 1 關閉"),
     },
   });
 };
@@ -37,7 +37,7 @@ div#point.bg-blue-50
 
     .grid.gap-5.text-lg(class="grid-cols-1 md:grid-cols-2")
     
-      a.point-pop-link.bg-orange-200.text-center.py-4.rounded-full(@click="openDialog")
+      a.point-pop-link.bg-orange-200.text-center.py-4.rounded-full(@click="openDialog1")
         p.font-genjyuu-bold.text-3xl.mb-2
           span.text-white Ａ.
           span.mx-4 藥物療效
