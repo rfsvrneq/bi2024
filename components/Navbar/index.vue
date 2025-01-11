@@ -1,28 +1,34 @@
 <script setup>
   const nav = [
     {
-      title: '關於我和偏頭痛的那件事',
+      title: '秒懂治療',
       active: false,
-      type: '#tab',
-      label: 'menu_關於我和偏頭痛的那件事',
+      type: '#glossary',
+      label: 'menu_秒懂治療',
     },
     {
-      title: '如何舒緩及解決偏頭痛問題 ',
+      title: '治療計畫盤點（開始治療前）',
       active: false,
-      type: '#who',
-      label: 'menu_如何舒緩及解決偏頭痛問題',
+      type: '#plan',
+      label: 'menu_治療計畫盤點（開始治療前）',
     },
     {
-      title: '偏頭痛自我診斷指南',
+      title: '治療計畫盤點（開始治療後）',
       active: false,
-      type: '#card',
-      label: 'menu_偏頭痛自我診斷指南',
+      type: '#point',
+      label: 'menu_治療計畫盤點（開始治療後）',
     },
     {
-      title: '精選文章',
+      title: '抗癌真心話',
+      active: false,
+      type: '#story',
+      label: 'menu_抗癌真心話',
+    },
+    {
+      title: '破除肺癌迷思',
       active: false,
       type: '#slide',
-      label: 'menu_精選文章',
+      label: 'menu_破除肺癌迷思',
     },
   ]
   
@@ -49,7 +55,7 @@ const moveTo = (ta) => {
 <template lang="pug">
 div#topbar.w-full.fixed.top-0.left-0.z-20.bg-green-400(class="h-[64px]")
   
-  nav.flex.justify-between.items-center.h-full.container.max-w-7xl.py-0
+  nav.flex.justify-between.items-center.h-full.container.max-w-6xl.py-0
     
     //- logo
     a.w-28.block(href="https://www.commonhealth.com.tw/", target="_blank") 
@@ -66,7 +72,7 @@ div#topbar.w-full.fixed.top-0.left-0.z-20.bg-green-400(class="h-[64px]")
       //-選單
       .nav
         .item
-          a.text-white.text-lg.ml-0(class="click_event" class="md:ml-5" data-title="pfizermigraine2024")(v-for=`(nav, index) in nav`, :href=`nav.type`, :class=`{ 'active': isActive == nav.type, 'first-border': index === 0 }`, @click.prevent=`moveTo(nav.type)`, :data-label="nav.label") {{nav.title}}
+          a(class="click_event text-white text-lg ml-0 md:ml-5" data-title="pfizermigraine2024")(v-for="(nav, index) in nav", :href="nav.type", :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }", @click.prevent="moveTo(nav.type)", :data-label="nav.label") {{nav.title}}
 </template>
 
 <style scoped lang="sass">

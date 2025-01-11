@@ -47,7 +47,7 @@ const slides = [
 </script>
 
 <template>
-  <div class="container max-w-6xl imp_event" id="slide" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-article">
+  <div class="container bg-yellow-50 max-w-6xl imp_event" id="slide" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-article">
     <h2 class="ttl">
       <span>精</span>
       <span>選</span>

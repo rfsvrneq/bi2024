@@ -22,9 +22,20 @@ export default {
         green: {
           400: "#009944",
         },
+        blue: {
+          50: "#F0F5F8",
+          400: "#1F89BD",
+        },
+        orange: {
+          200: "#F9CBAC",
+        },
       },
       screens: {
-        'xs': '480px',
+        'xs': '430px',
+      },
+      borderWidth: {
+        '1': '1px',
+        '3': '3px',
       },
       fontFamily: {
         'sans': ['"Noto Sans TC"', '"Microsoft JhengHei"'],

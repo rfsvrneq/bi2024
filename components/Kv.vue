@@ -9,16 +9,13 @@ div#kv.relative.pt-20.bg-custom-grey-100(class="imp_event" data-title="pfizermig
     .container.text-center(class="lg:text-right")
       .kv-ttl.inline-block
         img.w-32.mx-auto.mb-4(src="/assets/img/kv-lung.svg" class="sm:mb-8 sm:w-40")
-        .font-genjyuu-bold.leading-none.text-center(class="text-[50px] sm:text-[80px]")
+        .font-genjyuu-bold.leading-none.text-center.text-gray-600(class="text-[50px] sm:text-[80px]")
           h2 晚期肺癌
           h2.mt-4.mb-4(class="sm:mb-8") 全照護指南
-        .font-openhuninn.font-bold.leading-none.text-center(class="text-2xl sm:text-[36px]")
-          h3.mb-2 治療趨勢、身心照護身心照護
+        .font-openhuninn.font-bold.leading-none.text-center.text-gray-700(class="text-2xl sm:text-[36px]")
+          h3.mb-2 治療趨勢、身心照護
           h3 全方位抗癌懶人包
-
-    
 </template>
-
 <style scoped lang="sass">
 #kv
   background: url(/assets/img/kv-bg.svg) no-repeat, #fbf9ef
