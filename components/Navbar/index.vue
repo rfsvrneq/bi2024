@@ -1,22 +1,28 @@
 <script setup>
   const nav = [
     {
+      title: '首頁',
+      active: false,
+      type: '#kv',
+      label: 'menu_首頁',
+    },
+    {
       title: '秒懂治療',
       active: false,
-      type: '#glossary',
+      type: '#noun',
       label: 'menu_秒懂治療',
     },
     {
-      title: '治療計畫盤點（開始治療前）',
+      title: '治療計畫盤點（治療前）',
       active: false,
-      type: '#plan',
-      label: 'menu_治療計畫盤點（開始治療前）',
+      type: '#planBefore',
+      label: 'menu_治療計畫盤點（治療前）',
     },
     {
-      title: '治療計畫盤點（開始治療後）',
+      title: '治療計畫盤點（治療後）',
       active: false,
-      type: '#point',
-      label: 'menu_治療計畫盤點（開始治療後）',
+      type: '#planAfter',
+      label: 'menu_治療計畫盤點（治療後）',
     },
     {
       title: '抗癌真心話',

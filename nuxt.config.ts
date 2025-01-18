@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
         lang: 'zh-tw',
-        'data-title': 'pfizermigraine2024' // 康健GA
+        'data-title': process.env.NUXT_ENV_GA_EVENT_NAME // 康健GA
       },
       meta: [
         {

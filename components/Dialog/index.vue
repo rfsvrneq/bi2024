@@ -1,15 +1,18 @@
 <script setup>
   import { useDialog, dataDialog } from "@/composables/useDialog";
   const dialog = useDialog();
+  
 </script>
 
 <template lang="pug">
 div
   //- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
-  dialog#dialog
-    button.cancel(@click="dialog.close('cancel')") {{ dataDialog.cancel.btnName }}
-    main.container
-      p {{ dataDialog.content }}
+  //- 使用 showModal() 或 close() 方法），則需要使用 ref
+  dialog#dialog(ref="dialog")
+    button.cancel(@click="dialog.close") {{ dataDialog.cancel.btnName }}
+    main
+      //- 根據 dataDialog.contentComponent 的值來決定渲染哪個組件
+      component(:is="dataDialog.contentComponent")
 </template>
 
 <style scoped lang="sass">
@@ -17,11 +20,13 @@ div
 #dialog
   border: none
   width: 90%
-  height: 600px
-  max-width: 800px
-  max-height: 90vh
+  // height: auto
+  max-width: 840px
   position: fixed
   overflow: hidden
+  @media screen and (max-width: 768px)
+    height: auto
+    max-height: 90vh
 
 dialog::backdrop
   background-color: rgba(#000, 0.5)
@@ -29,7 +34,7 @@ dialog::backdrop
 main
   overflow-y: auto
   max-height: 100%
-  padding: 5rem 2rem 2rem 2rem
+  padding: 3rem
   
 .cancel
   width: 50px
@@ -41,6 +46,7 @@ main
   color: #000
   cursor: pointer
   position: absolute
+  user-select: none
   top: .5rem
   right: .5rem
   z-index: 1

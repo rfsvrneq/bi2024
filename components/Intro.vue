@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template lang="pug">
-div
+div#intro(class="imp_event" data-title="lungcancercare" data-label="imp_section-lungcancercare-noun")
   .container
     img(src="/assets/img/intro-people.svg" class="mx-auto w-[160px] mb-8")
 
@@ -25,4 +25,8 @@ div
 </template>
 
 <style scoped lang="sass">
+#intro
+  background: url(/assets/img/bg-1.svg) no-repeat
+  background-size: cover
+  background-position: right top
 </style>

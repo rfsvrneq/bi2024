@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template lang="pug">
-div#kv.relative.pt-20.bg-custom-grey-100(class="imp_event" data-title="pfizermigraine2024" data-label="imp_section-pfizer-migraine-kv")
+div#kv.relative.pt-20(class="imp_event" data-title="lungcancercare" data-label="imp_section-lungcancercare-home")
   .flex.flex-col-reverse
     .w-full.relative.bottom-0.left-0(class="lg:absolute")
       img(src="/assets/img/kv.svg" class="w-12/12 sm:w-11/12 md:w-12/12 lg:w-8/12 xl:w-7/12 max-w-[800px]")
