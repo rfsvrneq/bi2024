@@ -91,25 +91,18 @@ const slides = [
   </div>
 </template>
 
-
-
-<style scoped>
-.slide-img {
-  width: 100%;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-}
-.swiper-button-prev:after, .swiper-button-next:after {
+<style scoped lang="sass">
+.slide-img
+  width: 100%
+  height: 150px
+  background-size: cover
+  background-position: center
+.swiper-button-prev:after, .swiper-button-next:after
   @apply text-gray-900 px-5 py-3 rounded-full text-2xl
-}
-.swiper-button-prev {
+.swiper-button-prev 
   @apply left-0
-}
-.swiper-button-next {
+.swiper-button-next
   @apply right-0
-}
-.slide-img {
+.slide-img
   @apply rounded-3xl
-}
 </style>

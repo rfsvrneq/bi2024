@@ -9,25 +9,25 @@ div.overflow-x-auto
   Kv
 
   //- 引言
-  Intro
+  //- Intro
 
   //- 1.九大項_搞懂醫師說什麼
-  Noun
-  TabNoun
+  //- Noun
+  //- TabNoun
 
   //- 2.全方位治療計劃盤點
-  PlanBefore
-  TabPlanBefore
+  //- PlanBefore
+  //- TabPlanBefore
 
   //- 4大評估重點一次看：
-  Point
-  Dialog
+  //- Point
+  //- Dialog
 
   //- 治療計畫盤點（開始治療後）
-  PlanAfter
-  TabPlanAfter
+  //- PlanAfter
+  //- TabPlanAfter
 
-  Story
+  //- Story
   //- Health
   Slide
   //- Reference
