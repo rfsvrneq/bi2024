@@ -9,11 +9,11 @@ div.overflow-x-auto
   Kv
 
   //- 引言
-  //- Intro
+  Intro
 
   //- 1.九大項_搞懂醫師說什麼
-  //- Noun
-  //- TabNoun
+  Noun
+  TabNoun
 
   //- 2.全方位治療計劃盤點
   //- PlanBefore
