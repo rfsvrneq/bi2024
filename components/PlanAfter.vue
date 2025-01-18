@@ -5,7 +5,7 @@ div#planAfter.bg-yellow-50(class="imp_event" data-title="lungcancercare" data-la
 
   //- 4.治療計劃盤點
   .container
-    .font-genjyuu-bold.text-center
+    .font-genjyuu-bold.text-center(data-aos="fade-down")
       h2.capsule-ttl
         span.block 治療計畫盤點
 

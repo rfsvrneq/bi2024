@@ -20,7 +20,7 @@ div#point.bg-blue-50
       p 如果積極配合治療，晚期肺癌病人仍有不錯的生活品質與生存期。
 
     
-    h2.capsule-ttl
+    h2.capsule-ttl(data-aos="fade-down")
       span.block.text-orange-500.mb-2 沒有最好的治療，只有最適合的治療！
       span.block.font-openhuninn(class="text-lg md:text-xl leading-6") 建議與主治醫師討論最適合自己的第一線治療策略，以爭取最佳存活期！
 

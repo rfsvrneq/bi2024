@@ -19,7 +19,7 @@ div#story.bg-yellow-50(class="imp_event" data-title="lungcancercare" data-label=
 
   //- 4.抗癌真心話
   .container.max-w-3xl
-    .font-genjyuu-bold.text-center
+    .font-genjyuu-bold.text-center(data-aos="fade-down")
       h2.capsule-ttl
         span.block 抗癌真心話
 

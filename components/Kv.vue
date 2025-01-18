@@ -7,7 +7,7 @@ div#kv.relative.pt-20(class="imp_event" data-title="lungcancercare" data-label="
       img(src="/assets/img/kv.svg" class="w-12/12 sm:w-11/12 md:w-12/12 lg:w-8/12 xl:w-7/12 max-w-[800px]")
 
     .container.text-center(class="lg:text-right")
-      .kv-ttl.inline-block
+      .kv-ttl.inline-block(data-aos="fade-down")
         img.w-32.mx-auto.mb-4(src="/assets/img/kv-lung.svg" class="sm:mb-8 sm:w-40")
         .font-genjyuu-bold.leading-none.text-center.text-gray-600(class="text-[50px] sm:text-[80px]")
           h2 晚期肺癌

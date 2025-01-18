@@ -6,7 +6,7 @@ div#planBefore.bg-blue-50(class="imp_event" data-title="lungcancercare" data-lab
   //- 2.全方位治療計劃盤點
   .container
     .font-genjyuu-bold.text-center
-      h2.capsule-ttl
+      h2.capsule-ttl(data-aos="fade-down")
         span.block 初確診晚期肺癌治療關鍵！
         span.block 全方位治療計畫盤點
 
