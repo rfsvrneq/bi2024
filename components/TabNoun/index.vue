@@ -88,7 +88,7 @@ div#bg-3
 
 <style lang="sass">
 #bg-3
-  background: url(/assets/img/bg-3.svg) no-repeat
+  background: url(/assets/img/bg-3.png) no-repeat
   background-size: 100% auto
   background-position: center bottom
 

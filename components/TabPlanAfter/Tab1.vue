@@ -47,7 +47,7 @@ div
         img(src="/assets/img/tab-check/tabs-check-1-6.svg")
 
     //- 延伸閱讀
-    .text-left.ml-5
+    .text-left.mx-5(class="mb-8 sm:mb-0")
       p.text-base.bg-orange-400.inline-block.text-white.px-2.rounded 延伸閱讀
       a.block.text-sm.underline.text-blue-400.mt-1(href="https://cancer.commonhealth.com.tw/article/79" target="_blank") 【化療 5 大副作用都有方法可對治】
 
@@ -73,7 +73,7 @@ div
         span ＋
 
     //- 延伸閱讀
-    .text-left.ml-5.mb-14
+    .text-left.mx-5.mb-14
       p.text-base.bg-orange-400.inline-block.text-white.px-2.rounded 延伸閱讀
       a.block.text-sm.underline.text-blue-400.mt-1(href="https://cancer.commonhealth.com.tw/article/661" target="_blank") 【什麼是肺癌放射線治療？肺癌放療6大副作用一次說明】
 
@@ -94,7 +94,7 @@ div
         img(src="/assets/img/tab-check/tabs-check-1-11.svg")
 
     //- 延伸閱讀
-    .text-left.ml-5.mb-14
+    .text-left.mx-5.mb-14
       p.text-base.bg-orange-400.inline-block.text-white.px-2.rounded 延伸閱讀
       a.block.text-sm.underline.text-blue-400.mt-1(href="https://cancer.commonhealth.com.tw/article/72" target="_blank") 【標靶治療副作用，9 個皮膚照護重點】
 
@@ -110,7 +110,7 @@ div
         img(src="/assets/img/tab-check/tabs-check-1-13.svg")
 
     //- 延伸閱讀
-    .text-left.ml-5.mt-5
+    .text-left.mx-5.mt-5
       p.text-base.bg-orange-400.inline-block.text-white.px-2.rounded 延伸閱讀
       a.block.text-sm.underline.text-blue-400.mt-1(href="https://cancer.commonhealth.com.tw/article/389" trarget="_blank") 【肺癌飲食禁忌有什麼？肺癌飲食菜單 4 要點、5 大養肺食材一次看】
 

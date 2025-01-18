@@ -76,11 +76,18 @@ div#story.bg-yellow-50(class="imp_event" data-title="lungcancercare" data-label=
     position: relative
     border-radius: 35px
     padding: 3rem 3rem 3rem 2rem
+    @media screen and (max-width: 768px)
+      padding: 1.5rem
+      border-radius: 25px
     .pic
       position: absolute
       width: 120px
       right: -3px
       top: -2px
+      @media screen and (max-width: 768px)
+        width: 80px
+        right: -3px
+        top: -2px
     .toggleClamp
       cursor: pointer
       position: relative

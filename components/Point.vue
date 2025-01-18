@@ -69,7 +69,7 @@ div#point.bg-blue-50
 
 <style scoped lang="sass">
   .capsule-ttl
-    @apply font-genjyuu-bold text-2xl px-5 py-4 rounded-full text-center border-3 border-blue-400 md:text-3xl mt-8
+    @apply font-genjyuu-bold text-2xl px-5 py-4 rounded-3xl sm:rounded-full text-center border-3 border-blue-400 md:text-3xl mt-8
   
   .img-ttl-2
     background: url(/assets/img/point-1.svg) no-repeat

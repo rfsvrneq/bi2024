@@ -26,7 +26,7 @@ div#intro(class="imp_event" data-title="lungcancercare" data-label="imp_section-
 
 <style scoped lang="sass">
 #intro
-  background: url(/assets/img/bg-1.svg) no-repeat
-  background-size: cover
+  background: url(/assets/img/bg-1.png) no-repeat
+  background-size: 50% auto
   background-position: right top
 </style>

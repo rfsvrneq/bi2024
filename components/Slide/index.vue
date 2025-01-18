@@ -52,14 +52,14 @@ const slides = [
           }"
           :breakpoints="{
             '320': {
-              slidesPerView: 2,
+              slidesPerView: 1,
               grid: {
                 rows: 1,
                 fill: 'row'
               }
             },
             '768': {
-              slidesPerView: 3,
+              slidesPerView: 2,
               grid: {
                 rows: 1,
                 fill: 'row'
