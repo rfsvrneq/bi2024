@@ -78,7 +78,7 @@ div#topbar.w-full.fixed.top-0.left-0.z-20.bg-green-400(class="h-[64px]")
       //-選單
       .nav
         .item
-          a(class="click_event text-white text-lg ml-0 md:ml-5" data-title="pfizermigraine2024")(v-for="(nav, index) in nav", :href="nav.type", :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }", @click.prevent="moveTo(nav.type)", :data-label="nav.label") {{nav.title}}
+          a(class="click_event text-white text-lg ml-0 md:ml-5" data-title="lungcancercare")(v-for="(nav, index) in nav", :href="nav.type", :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }", @click.prevent="moveTo(nav.type)", :data-label="nav.label") {{nav.title}}
 </template>
 
 <style scoped lang="sass">
