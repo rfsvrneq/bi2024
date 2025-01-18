@@ -21,7 +21,7 @@
   max-width: 840px
   position: fixed
   overflow: hidden
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 1024px)
     height: auto
     max-height: 90vh
 

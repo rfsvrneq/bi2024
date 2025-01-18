@@ -24,10 +24,10 @@ div.overflow-x-auto
   Dialog
 
   //- 治療計畫盤點（開始治療後）
-  //- PlanAfter
-  //- TabPlanAfter
+  PlanAfter
+  TabPlanAfter
 
-  //- Story
+  Story
   //- Health
   Slide
   //- Reference
