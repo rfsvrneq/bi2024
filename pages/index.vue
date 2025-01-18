@@ -16,12 +16,12 @@ div.overflow-x-auto
   TabNoun
 
   //- 2.全方位治療計劃盤點
-  //- PlanBefore
-  //- TabPlanBefore
+  PlanBefore
+  TabPlanBefore
 
   //- 4大評估重點一次看：
-  //- Point
-  //- Dialog
+  Point
+  Dialog
 
   //- 治療計畫盤點（開始治療後）
   //- PlanAfter
