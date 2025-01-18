@@ -102,7 +102,7 @@ div
       @media screen and (max-width: 768px)
         font-size: .75rem
 .tabs-table-content
-  padding: 0 1rem
+  padding: 0rem
   div
     overflow-x: auto
     position: relative

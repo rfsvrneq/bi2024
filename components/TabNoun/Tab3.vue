@@ -5,6 +5,7 @@ div
   .img-ttl.relative.pb-20.mb-5.border-b-1.border-blue-400
     img.absolute.top-0.left-0(src="/assets/img/tab/tab3-1.svg", class="w-[320px]")
     h3.font-genjyuu-bold.relative(class="pl-[118px] pt-3 text-2xl xs:text-3xl") 基因突變類型
+    img.absolute.top-0.right-2(src="/assets/img/tab/tab3-3.svg", class="w-[120px] hidden md:block")
 
   .tab-style
     p 肺癌治療藥物發展快速，對於晚期肺癌病人可使用基因檢測的方式來找到相對應的基因突變，而不同基因突變，就可選擇相對應的標靶藥物，這就是所謂的精準治療。以非小細胞肺癌中佔比最高的肺腺癌為例，目前已知的基因突變就以 EGFR 為亞洲人最常見的基因突變類型(約佔45-55%)

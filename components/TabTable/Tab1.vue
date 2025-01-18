@@ -9,7 +9,7 @@ div
         th(class="w-2/12") 藥物名稱
         th(class="w-2/12") 健保 / 自費
         th(class="w-1/12") 
-        th(class="w-5/12 text-left") 說明
+        th(class="w-6/12 text-left") 說明
     tbody.leading-6
       
       //- 艾瑞莎
@@ -21,9 +21,7 @@ div
           span.block.text-sm (第一線、第二線)
         td 第1代
           span.block 藥物
-        td.text-left(rowspan="2") 第1代的愛瑞莎、得舒緩均為口服藥，為具有 EGFR-TK 突變，局部侵犯性或轉移性非小細胞肺癌病患的第1線治療，或先前已做過化學治療，
-          br
-          | 但仍局部惡化或轉移的肺腺癌病患第2線用藥。
+        td.text-left(rowspan="2") 第1代的愛瑞莎、得舒緩均為口服藥，為具有 EGFR-TK 突變，局部侵犯性或轉移性非小細胞肺癌病患的第1線治療，或先前已做過化學治療，但仍局部惡化或轉移的肺腺癌病患第2線用藥。
 
       //- 得舒緩
       tr.text-center
@@ -44,9 +42,7 @@ div
           span.block 藥物
         td.text-left 口服藥，
           br
-          | 第2代的妥復克亦適用於具有 EGFR-TK 突變，
-          br
-          | 局部晚期或轉移性非小細胞肺癌病患的第1線治療。
+          | 第2代的妥復克亦適用於具有 EGFR-TK 突變，局部晚期或轉移性非小細胞肺癌病患的第1線治療。
 
       //- 肺欣妥
       tr.text-center
@@ -58,9 +54,7 @@ div
           span.block 藥物
         td.text-left 口服藥，
           br
-          | 適用於帶有 EGFR 突變之局部晚期
-          br
-          | 或轉移性非小細胞肺癌 (NSCLC) 成年病患的第一線治療。
+          | 適用於帶有 EGFR 突變之局部晚期或轉移性非小細胞肺癌 (NSCLC) 成年病患的第一線治療。
 
       //- 泰格莎
       tr.text-center
@@ -76,9 +70,7 @@ div
           span.block 藥物
         td.text-left 口服藥，
           br
-          | 第3代泰格莎則用於曾以第1代或第2代標靶藥物治療，
-          br
-          | 但仍產生 T790M 抗藥突變基因的肺腺癌病患。
+          | 第3代泰格莎則用於曾以第1代或第2代標靶藥物治療，但仍產生 T790M 抗藥突變基因的肺腺癌病患。
       
       //- 肺倍恩
       tr.text-center

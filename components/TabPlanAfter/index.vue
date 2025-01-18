@@ -43,6 +43,9 @@ const tabComponents = {
 <template lang="pug">
 div.bg-yellow-50
   .container.max-w-4xl
+    .hidden(class="md:block")
+      img.pic(src="/assets/img/planAfter-1.svg" class="absolute w-36 left-10 -top-28")
+      img.pic(src="/assets/img/planAfter-2.svg" class="absolute w-20 right-2 -top-28")
     .tabs-check.flex.justify-center(class="space-x-1 md:space-x-8")
       div.click_event(v-for='(tab, index) in tabs' :key='index' @click='changeTab(tab.title)' :class="{ 'active': activeTab === tab.title }", data-title="lungcancercare", :data-label="tab.label")
         span.font-openhuninn {{ tab.title }}
