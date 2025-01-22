@@ -11,14 +11,15 @@ const openDialog = (dialogId) => {
 div#point.bg-blue-50
   
   .container.max-w-3xl
-    .img-ttl.relative
-      img.absolute.top-0.left-0(src="/assets/img/point-ttl.svg", class="w-[320px] md:w-[360px]")
-      h3.font-genjyuu-bold.text-3xl.relative(class="pl-7 pt-2 md:pl-12 md:pt-3") 談晚期肺癌治療策略
-    .ml-28.mt-8.text-lg
-      p.text-2xl.font-openhuninn.mb-3 高雄長庚肺癌團隊召集人 王金洲醫師 
-      p 晚期病人的治療目標是希望存活期能長、生活品質也能更好。
-      p 如果積極配合治療，晚期肺癌病人仍有不錯的生活品質與生存期。
-
+    .img-ttl.text-center.text-orange-500.mb-5
+      h3.font-genjyuu-bold.text-3xl 談晚期肺癌治療策略
+    
+    .flex.items-center.justify-center
+      img(src="/assets/img/story-4.png", class="w-[140px]")
+      .ml-5.text-lg
+        p.text-2xl.font-openhuninn.mb-1 高雄長庚肺癌團隊召集人 王金洲醫師 
+        p 晚期病人的治療目標是希望存活期能長、生活品質也能更好。
+        p 如果積極配合治療，晚期肺癌病人仍有不錯的生活品質與生存期。
     
     h2.capsule-ttl(data-aos="fade-down")
       span.block.text-orange-500.mb-2 沒有最好的治療，只有最適合的治療！
@@ -60,10 +61,6 @@ div#point.bg-blue-50
           span.text-white +
         span.block 治療有健保給付嗎？
         span.block 我的經濟狀況可以負擔抗藥後治療嗎？
-    
-      
-
-
     
 </template>
 

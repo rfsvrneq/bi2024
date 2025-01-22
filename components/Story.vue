@@ -109,6 +109,17 @@ div#story.bg-yellow-50(class="imp_event" data-title="lungcancercare" data-label=
       padding-left: 2rem
     .line-clamp-3
       position: relative
+      padding-right: 4rem
+      padding-bottom: .4rem
+      &::after
+        content: ''
+        position: absolute
+        right: .35rem
+        bottom: -.25rem
+        background: url(/assets/img/cursor.svg) no-repeat
+        background-size: auto 100%
+        width: 55px
+        height: 40px
       &::before
         content: '▶'
         position: absolute
