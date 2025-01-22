@@ -22,7 +22,7 @@
   position: fixed
   overflow-x: hidden
   @media screen and (max-width: 1024px)
-    height: auto
+    /* height: auto */
     /* max-height: 90vh */
 
 dialog::backdrop
