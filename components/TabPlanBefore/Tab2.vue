@@ -12,7 +12,9 @@ div
       img(src="/assets/img/tab-plan/tabs-plan-2-3.svg" class="w-10 md:w-32")
       p.ml-5.text-xl(class="mr-10 md:mr-0")
         span.text-2xl.font-bold 透過基因檢測 制定治療策略
-        span.block.mt-2 晚期肺癌確診後建議同時進行EGFR及ALK基因檢測
+        span.block.mt-2 晚期肺癌確診後建議進行基因檢測，確認有無基因突變及其類型，進一步擬定個人化的治療方針。下圖以EGFR及ALK突變基因為例，其他突變基因請參考
+          a.inline-block.text-orange-500.underline(href="https://event.commonhealth.com.tw/2022lungcancer/#genetic", target="_blank") 肺癌標靶治療新解-基因檢測
+        
     img(src="/assets/img/tab-plan/tabs-plan-2-4.png" class="w-12/12 md:w-10/12 mx-auto")
   
 </template>

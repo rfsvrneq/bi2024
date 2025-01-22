@@ -8,7 +8,7 @@ div#kv.relative.pt-20(class="imp_event" data-title="lungcancercare" data-label="
 
     .container.text-center(class="lg:text-right")
       .kv-ttl.inline-block(data-aos="fade-down")
-        img.w-32.mx-auto.mb-4(src="/assets/img/kv-lung.svg" class="sm:mb-8 sm:w-40")
+        img.w-32.mx-auto.mb-4(src="/assets/img/kv-lung.png" class="sm:mb-8 sm:w-40")
         .font-genjyuu-bold.leading-none.text-center.text-gray-600(class="text-[50px] sm:text-[80px]")
           h2 晚期肺癌
           h2.mt-4.mb-4(class="sm:mb-8") 全照護指南

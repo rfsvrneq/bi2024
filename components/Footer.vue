@@ -25,7 +25,7 @@ footer {
     width: 100%;
     padding: 30px 0;
     color: #ffffff;
-    background: #009944;
+    background: #8bc2dd;
 }
 footer a{
     transition: .3s;

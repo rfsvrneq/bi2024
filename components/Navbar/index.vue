@@ -13,13 +13,13 @@
       label: 'menu_秒懂治療',
     },
     {
-      title: '治療計畫盤點（治療前）',
+      title: '治療<span class="text-blue-400">前</span>計畫盤點',
       active: false,
       type: '#planBefore',
       label: 'menu_治療計畫盤點（治療前）',
     },
     {
-      title: '治療計畫盤點（治療後）',
+      title: '治療<span class="text-blue-400">後</span>計畫盤點',
       active: false,
       type: '#planAfter',
       label: 'menu_治療計畫盤點（治療後）',
@@ -59,13 +59,13 @@ const moveTo = (ta) => {
 </script>
 
 <template lang="pug">
-div#topbar.w-full.fixed.top-0.left-0.z-20.bg-green-400(class="h-[64px]")
+div#topbar.w-full.fixed.top-0.left-0.z-20(class="h-[64px]")
   
   nav.flex.justify-between.items-center.h-full.container.max-w-6xl.py-0
     
     //- logo
-    a.w-28.block(href="https://www.commonhealth.com.tw/", target="_blank") 
-      img.w-full(src="/assets/img/logo.svg", alt="康健雜誌")
+    a.w-48.block(href="https://cancer.commonhealth.com.tw/", target="_blank") 
+      img.w-full(src="/assets/img/cancer-logo.webp", alt="康健雜誌")
 
     //- 漢堡
     a.burger-trigger(href="#", :class="{ 'active': burgerTrigger == true }", @click.prevent="burgerTrigger = !burgerTrigger")
@@ -78,26 +78,33 @@ div#topbar.w-full.fixed.top-0.left-0.z-20.bg-green-400(class="h-[64px]")
       //-選單
       .nav
         .item
-          a(class="click_event text-white text-lg ml-0 md:ml-5" data-title="lungcancercare")(v-for="(nav, index) in nav", :href="nav.type", :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }", @click.prevent="moveTo(nav.type)", :data-label="nav.label") {{nav.title}}
+          a(class="click_event text-white text-lg ml-0 md:ml-5" data-title="lungcancercare")(v-for="(nav, index) in nav", :href="nav.type", :class="{ 'active': isActive === nav.type, 'first-border': index === 0 }", @click.prevent="moveTo(nav.type)", :data-label="nav.label" v-html="nav.title")
 </template>
 
 <style scoped lang="sass">
 
-$nav-item-a: white !default
+$nav-item-a: #ffffff !default
 $nav-item-a-hover: #fef9cb !default
-$nav-wrap-bg: #F1F1EB !default
+$nav-wrap-bg: #8bc2dd !default
 $burger: white !default
-$nav-wrap-bg-mobile: #009944 !default
+$nav-wrap-bg-mobile: #8bc2dd !default
 $nav-item-a-mobile: white !default
 $nav-item-a-hover-mobile: white !default
 
 
 #topbar
+  background-color: $nav-wrap-bg
   .item
     a
       color: $nav-item-a
+      font-weight: bold
+      span
+        color: #2d89bd
       &:hover
         color: $nav-item-a-hover
+        span
+          color: $nav-item-a-hover
+
 
   
   //-行動裝置漢堡與導覽列

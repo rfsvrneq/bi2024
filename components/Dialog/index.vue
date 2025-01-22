@@ -18,12 +18,12 @@
 #dialog
   border: none
   width: 90%
-  max-width: 840px
+  max-width: 860px
   position: fixed
-  overflow: hidden
+  overflow-x: hidden
   @media screen and (max-width: 1024px)
     height: auto
-    max-height: 90vh
+    /* max-height: 90vh */
 
 dialog::backdrop
   background-color: rgba(#000, 0.5)
