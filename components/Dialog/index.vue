@@ -22,8 +22,8 @@
   position: fixed
   overflow-x: hidden
   @media screen and (max-width: 1024px)
-    /* height: auto */
-    /* max-height: 90vh */
+    height: auto
+    max-height: 90vh
 
 dialog::backdrop
   background-color: rgba(#000, 0.5)
