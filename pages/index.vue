@@ -1,37 +1,39 @@
 <script setup>
+import { onMounted } from 'vue'
 import Slide from '@/components/Slide/index.vue'
 
 </script>
 
 <template lang="pug">
-div.overflow-x-auto
+div
   //- 主視覺
-  Kv
+  //- Kv
 
   //- 引言
-  Intro
+  //- Intro
 
-  //- 1.九大項_搞懂醫師說什麼
-  Noun
-  TabNoun
+  //- 地圖
+  Map
 
-  //- 2.全方位治療計劃盤點
-  PlanBefore
-  TabPlanBefore
+  //- 分頁
+  //- TabTable
 
-  //- 4大評估重點一次看：
-  Point
-  Dialog
+  //- pop
+  //- Point
+  //- Dialog
 
-  //- 治療計畫盤點（開始治療後）
-  PlanAfter
-  TabPlanAfter
+  //- 收合
+  //- Story
 
-  Story
+  //- 引入圖片
   //- Health
-  Slide
-  //- Reference
+
+  //- 文章輪播
+  //- Slide
+
+  //- 贊助
   //- Sponsor
+
 </template>
 
 <style scoped lang="sass">

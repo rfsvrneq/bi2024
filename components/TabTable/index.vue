@@ -2,10 +2,6 @@
 import { ref } from 'vue';
 import Tab1 from './Tab1.vue';
 import Tab2 from './Tab2.vue';
-import Tab3 from './Tab3.vue';
-import Tab4 from './Tab4.vue';
-import Tab5 from './Tab5.vue';
-import Tab6 from './Tab6.vue';
 
 const tabs = ref([
   {
@@ -14,22 +10,6 @@ const tabs = ref([
   },
   {
     title: 'ALK',
-    label: 'click-',
-  },
-  {
-    title: 'ROS1',
-    label: 'click-',
-  },
-  {
-    title: 'KARS',
-    label: 'click-',
-  },
-  {
-    title: 'MET',
-    label: 'click-',
-  },
-  {
-    title: 'Anti-VEGF',
     label: 'click-',
   },
 ]);
@@ -44,10 +24,6 @@ const changeTab = (tabName) => {
 const tabComponents = {
   'EGFR': Tab1,
   'ALK': Tab2,
-  'ROS1': Tab3,
-  'KARS': Tab4,
-  'MET': Tab5,
-  'Anti-VEGF': Tab6,
 };
 
 </script>

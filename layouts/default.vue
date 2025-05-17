@@ -1,17 +1,16 @@
 <script setup>
-import "virtual:svg-icons-register";
 </script>
 
 <template>
   <div>
 
-    <Navbar />
+    <!-- <Navbar /> -->
     
     <main>
       <slot />
     </main>
 
-    <Footer />
+    <!-- <Footer /> -->
 
   </div>
 </template>

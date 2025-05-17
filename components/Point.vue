@@ -11,22 +11,8 @@ const openDialog = (dialogId) => {
 div#point.bg-blue-50
   
   .container.max-w-3xl
-    .img-ttl.text-center.text-orange-500.mb-5
-      h3.font-genjyuu-bold.text-3xl 談晚期肺癌治療策略
-    
-    .flex.items-center.justify-center
-      img(src="/assets/img/story-4.png", class="w-[140px]")
-      .ml-5.text-lg
-        p.text-2xl.font-openhuninn.mb-1 高雄長庚肺癌團隊召集人 王金洲醫師 
-        p 晚期病人的治療目標是希望存活期能長、生活品質也能更好。
-        p 如果積極配合治療，晚期肺癌病人仍有不錯的生活品質與生存期。
-    
-    h2.capsule-ttl(data-aos="fade-down")
-      span.block.text-orange-500.mb-2 沒有最好的治療，只有最適合的治療！
-      span.block.font-openhuninn(class="text-lg md:text-xl leading-6") 建議與主治醫師討論最適合自己的第一線治療策略，以爭取最佳存活期！
 
     //- 3.四大評估_popup
-    h3.img-ttl-2.text-2xl.font-bold.px-5.py-6.text-center.mt-10.mb-5 4大評估重點一次看：
 
     .grid.gap-5.text-lg(class="grid-cols-1 md:grid-cols-2")
     

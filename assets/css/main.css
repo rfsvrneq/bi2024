@@ -8,26 +8,6 @@
 
 @layer components {
 
-  @font-face {
-    /* 柔黑體 細 */
-    font-family: 'GenJyuuGothic-Light';
-    src: url('../font/GenJyuuGothic-Light.woff') format("woff"),
-         url('../font/GenJyuuGothic-Light.ttf') format("truetype"),
-         url('../font/GenJyuuGothic-Light.eot') format("embedded-opentype");
-  }
-  @font-face {
-    /* 柔黑體 粗 */
-    font-family: 'GenJyuuGothic-Bold';
-    src: url('../font/GenJyuuGothic-Bold.woff') format("woff"),
-         url('../font/GenJyuuGothic-Bold.ttf') format("truetype"),
-         url('../font/GenJyuuGothic-Bold.eot') format("embedded-opentype");
-  }
-  @font-face {
-    /* 粉圓體 */
-    font-family: 'jf-openhuninn';
-    src: url('../font/jf-openhuninn-2.1.ttf') format("truetype");
-  }
-
   body {
     @apply font-sans tracking-wide font-light text-gray-800
   }
